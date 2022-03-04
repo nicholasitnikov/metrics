@@ -31,15 +31,20 @@ const ControlPanel = (props) => {
         <div className={styles.container}>
             <Title level={4}>Дата: {day}.02.22</Title>
             <Slider onChange={sliderChangeHandler} min={1} max={14} defaultValue={30} value={day} />
-            <Divider />
-            <Title style={{marginBottom: 0}} level={4}>Почва</Title>
-            <Paragraph style={{marginBottom: 0}}>{getData.grave}</Paragraph>
-            <Divider />
-            <Title style={{marginBottom: 0}} level={4}>Вода</Title>
-            <Paragraph style={{marginBottom: 0}}>{getData.water === 'GOOD' ? 'Удовлетворительно.': 'Неудовлетворительно'}</Paragraph>
-            <Divider />
-            <Title style={{marginBottom: 0}} level={4}>Воздух</Title>
-            <Paragraph>{getData.air === 'GOOD' ? 'Удовлетворительно.': 'Неудовлетворительно' }</Paragraph>
+            {
+
+                id && 
+                <><Divider />
+                <Title style={{marginBottom: 0}} level={4}>Почва</Title>
+                <Paragraph style={{marginBottom: 0}}>{getData.grave}</Paragraph>
+                <Divider />
+                <Title style={{marginBottom: 0}} level={4}>Вода</Title>
+                <Paragraph style={{marginBottom: 0}}>{getData.water === 'GOOD' ? 'Удовлетворительно.': 'Неудовлетворительно'}</Paragraph>
+                <Divider />
+                <Title style={{marginBottom: 0}} level={4}>Воздух</Title>
+                <Paragraph>{getData.air === 'GOOD' ? 'Удовлетворительно.': 'Неудовлетворительно' }</Paragraph></>
+
+            }
         </div>
     );
 
