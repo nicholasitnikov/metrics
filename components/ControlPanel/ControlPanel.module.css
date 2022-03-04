@@ -1,0 +1,11 @@
+.container {
+    max-width: 50vw;
+    padding: 10px;
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 0;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+}

@@ -1,0 +1,30 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-grow: 1;
+  min-height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+#__next {
+  display: flex;
+  flex-grow: 1;
+  min-height: 0;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-bottom-left {
+  display: none !important;
+}

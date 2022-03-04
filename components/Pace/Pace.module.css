@@ -1,0 +1,23 @@
+.container {
+    border-radius: 5px;
+    flex-shrink: 1;
+    z-index: 2;
+    background: white;
+    padding: 5px;
+}
+
+.tooltip {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.collapse {
+    border-bottom: none !important;
+}
+
+.ant-collapse-header {
+    font-size: 18px;
+}

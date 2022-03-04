@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    z-index: 2;
+    padding: 20px 15px 10px;
+    background: white;
+    flex-direction: column;
+    border-radius: 5px;
+    min-width: 300px
+}
+
+.form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.checkbox {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.checkbox_input {
+    margin-left: 10px;
+    padding: 0;
+}
+
+.button {
+    background: dodgerblue;
+    color: white;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+.option {
+    display: flex;
+    gap: 10px;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
