@@ -25,7 +25,6 @@ const MapContainer = (props) => {
         <MapGL onClick={hoverHandler} {...viewport} {...CONSTANTS.MAP_CONFIG} onViewportChange={setViewport} ref={mapRef}>
             <Source {...CONSTANTS.COVID_SOURCE}>
               <Layer {...CONSTANTS.COVID_LAYER} paint={{
-                // "circle-opacity": 0.6,
                 'circle-opacity': .8,
                 "circle-radius": [
                   'case',

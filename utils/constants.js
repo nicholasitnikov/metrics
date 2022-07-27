@@ -14,18 +14,19 @@ export default {
 	MAP_CONFIG: {
 		width: "100%",
 		height: "100%",
-		mapStyle: "mapbox://styles/asitnikov/ckwt1c9b01b3914pb0i3479bl",
-		mapboxApiAccessToken: "pk.eyJ1IjoiYXNpdG5pa292IiwiYSI6ImNrbmUyaWdidTJneHcycXA5c2Q3a201aGsifQ.k6nUY_ib-JKfuhiKnzeAIg"
+		mapStyle: "mapbox://styles/nicholasitnikov/cl63pj8nh001g14l78o5ky2cm",
+		mapboxApiAccessToken: "pk.eyJ1IjoibmljaG9sYXNpdG5pa292IiwiYSI6ImNrZjJjZHMzNjBidDEyenB3MGR1OTN0ZjQifQ.TfEdGR9agR2qGmcWOAV8wA"
 	},
 	COVID_SOURCE: {
 		"id": "covid_data",
 		"type": "vector",
-    "url": 'mapbox://asitnikov.5a4ffo4c'
+    "url": 'mapbox://nicholasitnikov.5zrjhsts'
 	},
 	COVID_LAYER: {
     "id": "covid_layer",
     "type": "circle",
-    "source-layer": "spb-7m2bfp",
+    "source": "covid_data",
+    "source-layer": "spb-b6oixy",
     "paint": {
         "circle-opacity": 0.6,
         "circle-radius": 5
